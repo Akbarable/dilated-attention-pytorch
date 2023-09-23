@@ -1,3 +1,15 @@
+# Forked from fkodom's implementation of LongNet
+
+I have added a pretraining and finetuning directory in this fork. 
+
+
+
+
+
+
+
+
+
 # dilated-attention-pytorch
 
 (Unofficial) Implementation of `DilatedAttention` from *[LongNet: Scaling Transformers to 1,000,000,000 Tokens](https://arxiv.org/abs/2307.02486)* in PyTorch.
