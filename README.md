@@ -2,11 +2,11 @@
 
 I have added an Orca style finetuning directory in this fork. 
 
-1. The  ```bash trainer.py ``` file has the LongNet Trainer class, which is used to calculate the loss and train the model.
-2. The  ```bash finetune_dataset.py ``` file has the LanguageModelDataset class, which is handling the data preprocessing of the text dataset.
+1. The  ```trainer.py ``` file has the LongNet Trainer class, which is used to calculate the loss and train the model.
+2. The  ```finetune_dataset.py ``` file has the LanguageModelDataset class, which is handling the data preprocessing of the text dataset.
 3. After tokenization and setting the chunk sizes, the source tensors are are "system_promt" and "question" tensor (concatenated), and the target tensor is the "response" tensor. The loss is calculated between the source and target tensor.
 4. With these files, I am able to get a batch loss of 11.05965995... in the first batch, which indicates that the training is stable. I have also added profiling to see my GPU usage.
-5. The code also saves a "trained_model.pth" model file, which can be used to load in the model and do inferencing.
+5. The code also saves a ```trained_model.pth``` model file, which can be used to load in the model and do inferencing.
 
 
 
